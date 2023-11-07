@@ -29,7 +29,7 @@ public class RestApplication {
     public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
         return args -> {
 
-            String plainCreds = "dicetek.fida@dpworld.com:Cloud@12345";
+            String plainCreds = "email:paword";
             byte[] plainCredsBytes = plainCreds.getBytes();
             byte[] base64CredsBytes = Base64.encodeBase64(plainCredsBytes);
             String base64Creds = new String(base64CredsBytes);
